@@ -1,0 +1,25 @@
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    width: 75vw;
+    height: auto;
+    text-align: left;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    overflow-x: auto;
+}
+
+th {
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+}

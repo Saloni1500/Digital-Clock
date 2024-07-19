@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeZone Map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/Javascript/Images_Digital_clock/android-chrome-192x192.png" type="image/x-icon">
+  <link rel ="stylesheet" href="TimeZone.css">
+</head>
+
+<body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 35px;">TimeSquare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            &emsp14;&emsp14;&emsp14;&emsp14;
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Javascript/TimeZone.html"
+                            style="font-size: 20px;">Home</a>
+                    </li>
+                    &emsp14;&emsp14;
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px;" href="/Javascript/TimeZoneLink.html">TimeZone
+                            Map</a>
+                    </li>
+                    &emsp14;&emsp14;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded style="font-size: 20px;">
+                            Time Zones
+                        </a>
+                        <ul class="dropdown-menu" style="overflow: scroll; max-height: 500px;">
+                            <li><a class="dropdown-item" href="#">Greenwich Mean Time (GMT)</a></li>
+                            <li><a class="dropdown-item" href="#">Universal Coordinated Time (UTC)</a></li>
+                            <li><a class="dropdown-item" href="#">European Central Time (ETC)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern European Time (EET)</a></li>
+                            <li><a class="dropdown-item" href="#">(Arabic) Egypt Standard Time (EAT)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern African Time (UTC)</a></li>
+                            <li><a class="dropdown-item" href="#">Middle East Time(MET)</a></li>
+                            <li><a class="dropdown-item" href="#">Near East Time (NET)</a></li>
+                            <li><a class="dropdown-item" href="#">Pakistan Lahore Time (PLT)</a></li>
+                            <li><a class="dropdown-item" href="#">India Standard Time (IST)</a></li>
+                            <li><a class="dropdown-item" href="#">Bangladesh Standard Time (BST)</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnam Standard Time (VST)</a></li>
+                            <li><a class="dropdown-item" href="#">China Taiwan Time (CTT)</a></li>
+                            <li><a class="dropdown-item" href="#">Japan Standard Time (JST)</a></li>
+                            <li><a class="dropdown-item" href="#">Australia Central Time (ACT)</a></li>
+                            <li><a class="dropdown-item" href="#">Australia Eastern Time (AET)</a></li>
+                            <li><a class="dropdown-item" href="#">Solomon Standard Time (SST)</a></li>
+                            <li><a class="dropdown-item" href="#">New Zealand Standard Time (NST)</a></li>
+                            <li><a class="dropdown-item" href="#">Midway Islands Time (MIT)</a></li>
+                            <li><a class="dropdown-item" href="#">Hawaii Standard Time (HST)</a></li>
+                            <li><a class="dropdown-item" href="#">Alaska Standard Time (AST)</a></li>
+                            <li><a class="dropdown-item" href="#">Pacific Standard Time (PST)</a></li>
+                            <li><a class="dropdown-item" href="#">Phoenix Standard Time (PNT)</a></li>
+                            <li><a class="dropdown-item" href="#">Mountain Standard Time (MST)</a></li>
+                            <li><a class="dropdown-item" href="#">Central Standard Time (CST)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern Standard Time (EST)</a></li>
+                            <li><a class="dropdown-item" href="#">Indiana Eastern Standard Time (IET)</a></li>
+                            <li><a class="dropdown-item" href="#">Puerto Rico and US Virgin Islands Time (PRT)</a></li>
+                            <li><a class="dropdown-item" href="#">Canada Newfoundland Time (CNT)</a></li>
+                            <li><a class="dropdown-item" href="#">Argentina Standard Time (AGT)</a></li>
+                            <li><a class="dropdown-item" href="#">Brazil Eastern Time (BET)</a></li>
+                            <li><a class="dropdown-item" href="#">Central African Time (CAT)</a></li>
+
+                        </ul>
+                </ul>
+
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <h2 style="font-family: sans-serif;display: flex; align-self: center; justify-content: center;">World Time Zone Map
+    </h2>
+    <br>
+    <img src="https://gisgeography.com/wp-content/uploads/2020/11/World-Time-Zones-Map-2048x1493.jpg" style="background-repeat: no-repeat; background-size: cover; height:100vh ; width: 75vw;display: block;
+  margin-left: auto;
+  margin-right: auto;  alt: World-Time-Zones-Map;" />
+
+
+    <div style="margin: 80px 180px 50px 180px;">
+        <div style="font-size: 20px; border: 1px solid black; border-radius: 6px;">
+            <p style="text-align: center; margin: 30px 10px 30px 10px;">You are free to use our World Time Zone Map for
+                educational and commercial uses. <strong>Attribution is required</strong>. <a
+                    href="https://gisgeography.com/how-to-cite/">How to attribute?</a></p>
+        </div>
+    </div>
+
+    <div style="margin: 70px 500px 50px 190px;">
+        <h2>Time Zones Explained</h2>
+        <br>
+
+        <p style="font-family: sans-serif; font-size: 20px; float: left;">
+            We have 24 different time zones in the world. Because the Earth rotates 360° every 24 hours, each time zone
+            is 15° longitude apart from the other. (360÷24=15)
+            <br><br>
+            The Prime Meridian (Greenwich Meridian) defines the center of the first time zone in the world. This means
+            the Prime Meridian time zone spans from 7.5°W to 7.5°E. Then, the next time to the east spans 7.5°E to
+            22.5°E.
+        </p>
+    </div>
+    <div style="margin: -120px 150px 50px 40px; float: right;">
+        <img src="https://gisgeography.com/wp-content/uploads/2020/11/World-Time-Zone-Map-Globe-425x425.png" alt="Earth"
+            align="right" style="height: 300px; width: 300px;">
+    </div>
+
+    <div style="margin: 220px 180px 50px 190px;">
+
+        <h2>Gaining and losing time</h2>
+        <br>
+        <p style="font-family: sans-serif; font-size: 20px;">
+            When you move to the right, you gain time (fast time). In other words, for every time zone that you move
+            toward the right, you add one hour. But when you head toward the left, you lose an hour (slow time).
+            <br><br>
+            You can find any time by counting how many degrees of longitude it is away from Greenwich. For example, it
+            would be 4 pm at 60°E longitude when it’s noon at the Prime Meridian. Whereas it would be 8 am at 60°W
+            longitude.
+        </p>
+    </div>
+
+    <div style="margin: 45px 180px 50px 190px;">
+
+        <h2>International Date Line</h2>
+        <br>
+        <p style="font-family: sans-serif; font-size: 20px;">
+            The International Date Line is a north-south line in the Pacific Ocean where you turn your calendar back or
+            ahead one day. The center of the time zone roughly follows 180° longitude without crossing any landmass.
+            <br><br>
+            When you cross the International Date Line moving toward the east, you turn your calendar back one day.
+            Whereas when you go from the west across the International Date Line, you turn your calendar ahead one day.
+        </p>
+    </div>
+
+    <div style="margin: 45px 180px 50px 190px;">
+
+        <h2>Irregular Time Zone Boundaries</h2>
+        <br>
+        <p style="font-family: sans-serif; font-size: 20px;">
+            No time zone in the world runs a perfect north-south line. Instead, they are jagged and adapt to the
+            political boundaries of countries. Also, there can be “irregular square” time zones similar to islands.
+            <br><br>
+            For example, the province of Newfoundland and Labrador contains its own time zone with the same name which
+            is UTC -3:30. But the province mostly observes Atlantic Standard Time (AST). Other examples include
+            Afghanistan, Venezuela, and Australia with unusual time zones.
+        </p>
+    </div>
+
+    <div style="margin: 45px 180px 50px 190px;">
+
+        <h2>List of Time Zones and Abbreviations</h2>
+        <br>
+        <p style="font-family: sans-serif; font-size: 20px;">
+            Time zones can have names to help easily identify them. For example, this United States time zone map shows
+            the six designated time zones including Eastern, Central, Mountain, Pacific, Alaska, and Hawaii-Aleutian
+            time zones.
+            <br><br>
+            Here is a list of time zones and abbreviations that are in use today:
+        </p>
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Name</th>
+                    <th style="width: 60%;">Description</th>
+                    <th style="width: 30%;">Relative to GMT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GMT</td>
+                    <td>Greenwich Mean Time</td>
+                    <td>GMT</td>
+                </tr>
+                <tr>
+                    <td>UTC</td>
+                    <td>Universal Coordinated Time</td>
+                    <td>GMT</td>
+                </tr>
+                <tr>
+                    <td>ECT</td>
+                    <td>European Central Time</td>
+                    <td>GMT+1:00</td>
+                </tr>
+                <tr>
+                    <td>EET</td>
+                    <td>Eastern European Time</td>
+                    <td>GMT+2:00</td>
+                </tr>
+                <tr>
+                    <td>ART</td>
+                    <td>(Arabic) Egypt Standard Time</td>
+                    <td>GMT+2:00</td>
+                </tr>
+                <tr>
+                    <td>EAT</td>
+                    <td>Eastern African Time</td>
+                    <td>GMT+3:00</td>
+                </tr>
+                <tr>
+                    <td>MET</td>
+                    <td>Middle East Time</td>
+                    <td>GMT+3:30</td>
+                </tr>
+                <tr>
+                    <td>NET</td>
+                    <td>Near East Time</td>
+                    <td>GMT+4:00</td>
+                </tr>
+                <tr>
+                    <td>PLT</td>
+                    <td>Pakistan Lahore Time</td>
+                    <td>GMT+5:00</td>
+                </tr>
+                <tr>
+                    <td>IST</td>
+                    <td>India Standard Time</td>
+                    <td>GMT+5:30</td>
+                </tr>
+                <tr>
+                    <td>BST</td>
+                    <td>Bangladesh Standard Time</td>
+                    <td>GMT+6:00</td>
+                </tr>
+                <tr>
+                    <td>VST</td>
+                    <td>Vietnam Standard Time</td>
+                    <td>GMT+7:00</td>
+                </tr>
+                <tr>
+                    <td>CTT</td>
+                    <td>China Taiwan Time</td>
+                    <td>GMT+8:00</td>
+                </tr>
+                <tr>
+                    <td>JST</td>
+                    <td>Japan Standard Time</td>
+                    <td>GMT+9:00</td>
+                </tr>
+                <tr>
+                    <td>ACT</td>
+                    <td>Australia Central Time</td>
+                    <td>GMT+9:30</td>
+                </tr>
+                <tr>
+                    <td>AET</td>
+                    <td>Australia Eastern Time</td>
+                    <td>GMT+10:00</td>
+                </tr>
+                <tr>
+                    <td>SST</td>
+                    <td>Solomon Standard Time</td>
+                    <td>GMT+11:00</td>
+                </tr>
+                <tr>
+                    <td>NST</td>
+                    <td>New Zealand Standard Time</td>
+                    <td>GMT+12:00</td>
+                </tr>
+                <tr>
+                    <td>MIT</td>
+                    <td>Midway Islands Time</td>
+                    <td>GMT-11:00</td>
+                </tr>
+                <tr>
+                    <td>HST</td>
+                    <td>Hawaii Standard Time</td>
+                    <td>GMT-10:00</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>Alaska Standard Time</td>
+                    <td>GMT-9:00</td>
+                </tr>
+                <tr>
+                    <td>PST</td>
+                    <td>Pacific Standard Time</td>
+                    <td>GMT-8:00</td>
+                </tr>
+                <tr>
+                    <td>PNT</td>
+                    <td>Phoenix Standard Time</td>
+                    <td>GMT-7:00</td>
+                </tr>
+                <tr>
+                    <td>MST</td>
+                    <td>Mountain Standard Time</td>
+                    <td>GMT-7:00</td>
+                </tr>
+                <tr>
+                    <td>CST</td>
+                    <td>Central Standard Time</td>
+                    <td>GMT-6:00</td>
+                </tr>
+                <tr>
+                    <td>EST</td>
+                    <td>Eastern Standard Time</td>
+                    <td>GMT-5:00</td>
+                </tr>
+                <tr>
+                    <td>IET</td>
+                    <td>Indiana Eastern Standard Time</td>
+                    <td>GMT-5:00</td>
+                </tr>
+                <tr>
+                    <td>PRT</td>
+                    <td>Puerto Rico and US Virgin Islands Time</td>
+                    <td>GMT-4:00</td>
+                </tr>
+                <tr>
+                    <td>CNT</td>
+                    <td>Canada Newfoundland Time</td>
+                    <td>GMT-3:30</td>
+                </tr>
+                <tr>
+                    <td>AGT</td>
+                    <td>Argentina Standard Time</td>
+                    <td>GMT-3:00</td>
+                </tr>
+                <tr>
+                    <td>BET</td>
+                    <td>Brazil Eastern Time</td>
+                    <td>GMT-3:00</td>
+                </tr>
+                <tr>
+                    <td>CAT</td>
+                    <td>Central African Time</td>
+                    <td>GMT-1:00</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <hr style="margin: 15px 170px 50px 185px; border: 1px solid black;">
+
+    <div style="margin: 15px 180px 30px 190px;">
+        <h2>Leave a Reply</h2>
+        <br>
+        <p style="font-style: italic;">Your email address will not be published. Required fields are marked<span
+                style="color: red;">*</span> </p>
+
+        <form>
+            Comment<span style="color: red;">*</span><br><br>
+            <textarea placeholder="Leave a Comment..." style="height: 300px; width: 75vw;"></textarea>
+            <br><br><br>
+            <input text="Name" placeholder="Name" type="text" style="height: 50px; width: 35vw;">
+            <input text="Email" placeholder="Email" type="email" style="height: 50px; width: 36vw;margin-left: 53px;">
+
+            <button onclick="post()"
+                style="height: 45px; width: 35vw; margin:30px 750px 20px 1px; border-radius: 30px; background-color: rgba(28, 75, 145, 0.722); color: white; border-color: rgba(28, 75, 145, 0.722); font-family: sans-serif; ">Post
+                Comment </button>
+
+        </form>
+    </div>
+    <div style="height: 550px; background-color:#ebecf0;">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+            style="margin-left: 1px; margin-right: 1px; margin-bottom: 200px;margin-top: 30px;">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <img src="/Javascript/Images_Digital_clock/Time-removebg-preview.png" alt="Clock"
+                    style="height: 120px; width: 120px;margin-top: 20px ; margin-left: 500px; background-color: #ebecf0;;">
+                <h1 style="margin-top: -50px; margin-left: 170px; font-size: 60px;">TimeSquare</h1>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div style="margin-top:60px;  margin-left: 200px;">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">How To Cite</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+                </ul>
+            </div>
+
+
+            <div style="margin-top: 60px; margin-right: 50px;">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Analysis</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Career</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Cartography</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Data Sources</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">LiDAR</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Learn GIS</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">World Atlas</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">US Maps</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Remote Sensing</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Software</a></li>
+
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 30px; ">
+
+                <p class="text-center text-body-secondary" style="margin-left: 650px; margin-bottom: 0px;">
+                    TimeSquare&nbsp;Pvt<sup>&#169;</sup>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        function post() {
+            alert("Your Comment has been posted successfully!!!");
+        }
+    </script>
+
+</body>
+
+
+</html>

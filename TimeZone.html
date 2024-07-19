@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/Javascript/Images_Digital_clock/android-chrome-192x192.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 35px;">TimeSquare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            &emsp14;&emsp14;&emsp14;&emsp14;
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Javascript/TimeZone.html"
+                            style="font-size: 20px;">Home</a>
+                    </li>
+                    &emsp14;&emsp14;
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px;" href="/Javascript/TimeZoneLink.html">TimeZone
+                            Map</a>
+                    </li>
+                    &emsp14;&emsp14;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded style="font-size: 20px;">
+                            Time Zones
+                        </a>
+                        <ul class="dropdown-menu" style="overflow: scroll; max-height: 500px;">
+                            <li><a class="dropdown-item" href="#">Greenwich Mean Time (GMT)</a></li>
+                            <li><a class="dropdown-item" href="#">Universal Coordinated Time (UTC)</a></li>
+                            <li><a class="dropdown-item" href="#">European Central Time (ETC)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern European Time (EET)</a></li>
+                            <li><a class="dropdown-item" href="#">(Arabic) Egypt Standard Time (EAT)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern African Time (UTC)</a></li>
+                            <li><a class="dropdown-item" href="#">Middle East Time(MET)</a></li>
+                            <li><a class="dropdown-item" href="#">Near East Time (NET)</a></li>
+                            <li><a class="dropdown-item" href="#">Pakistan Lahore Time (PLT)</a></li>
+                            <li><a class="dropdown-item" href="#">India Standard Time (IST)</a></li>
+                            <li><a class="dropdown-item" href="#">Bangladesh Standard Time (BST)</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnam Standard Time (VST)</a></li>
+                            <li><a class="dropdown-item" href="#">China Taiwan Time (CTT)</a></li>
+                            <li><a class="dropdown-item" href="#">Japan Standard Time (JST)</a></li>
+                            <li><a class="dropdown-item" href="#">Australia Central Time (ACT)</a></li>
+                            <li><a class="dropdown-item" href="#">Australia Eastern Time (AET)</a></li>
+                            <li><a class="dropdown-item" href="#">Solomon Standard Time (SST)</a></li>
+                            <li><a class="dropdown-item" href="#">New Zealand Standard Time (NST)</a></li>
+                            <li><a class="dropdown-item" href="#">Midway Islands Time (MIT)</a></li>
+                            <li><a class="dropdown-item" href="#">Hawaii Standard Time (HST)</a></li>
+                            <li><a class="dropdown-item" href="#">Alaska Standard Time (AST)</a></li>
+                            <li><a class="dropdown-item" href="#">Pacific Standard Time (PST)</a></li>
+                            <li><a class="dropdown-item" href="#">Phoenix Standard Time (PNT)</a></li>
+                            <li><a class="dropdown-item" href="#">Mountain Standard Time (MST)</a></li>
+                            <li><a class="dropdown-item" href="#">Central Standard Time (CST)</a></li>
+                            <li><a class="dropdown-item" href="#">Eastern Standard Time (EST)</a></li>
+                            <li><a class="dropdown-item" href="#">Indiana Eastern Standard Time (IET)</a></li>
+                            <li><a class="dropdown-item" href="#">Puerto Rico and US Virgin Islands Time (PRT)</a></li>
+                            <li><a class="dropdown-item" href="#">Canada Newfoundland Time (CNT)</a></li>
+                            <li><a class="dropdown-item" href="#">Argentina Standard Time (AGT)</a></li>
+                            <li><a class="dropdown-item" href="#">Brazil Eastern Time (BET)</a></li>
+                            <li><a class="dropdown-item" href="#">Central African Time (CAT)</a></li>
+
+                        </ul>
+                </ul>
+
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Current Time and Date is <span id="time"></span></h1>
+                <br>
+                <p class="col-md-8 fs-4">Displaying time of different zones</p>
+                <a href="https://www.calculator.net/time-zone-calculator.html"><button class="btn btn-primary btn-lg"
+                        type="button">Browse Time</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-left:110px ; margin-right: 110px; ">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <h3 class="mb-0">Discovering Time Zones</h3>
+                        <div class="mb-1 text-body-secondary">Feb 25</div>
+                        <p class="card-text mb-auto">Know your Time Zones better.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/Javascript/Images_Digital_clock/earth.webp" height="250px" weight="200px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Adventure</strong>
+                        <h3 class="mb-0">Dive into Time!</h3>
+                        <div class="mb-1 text-body-secondary">Feb 26</div>
+                        <p class="mb-auto">This is your adventurous dive into different time zones.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/Javascript/Images_Digital_clock/map.png" height="250px" width="200px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 550px; background-color:#ebecf0;">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+            style="margin-left: 1px; margin-right: 1px; margin-bottom: 200px;margin-top: 30px;">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <img src="/Javascript/Images_Digital_clock/Time-removebg-preview.png" alt="Clock"
+                    style="height: 120px; width: 120px;margin-top: 20px ; margin-left: 500px; background-color: #ebecf0;;">
+                <h1 style="margin-top: -50px; margin-left: 170px; font-size: 60px;">TimeSquare</h1>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div style="margin-top:60px;  margin-left: 200px;">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">How To Cite</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+                </ul>
+            </div>
+
+
+            <div style="margin-top: 60px; margin-right: 50px;">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Analysis</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Career</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Cartography</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Data Sources</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">LiDAR</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Learn GIS</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">World Atlas</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">US Maps</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Remote Sensing</a></li>
+                    <li><a href="#" class="nav-link p-0 text-body-secondary">Software</a></li>
+
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 30px; ">
+
+                <p class="text-center text-body-secondary" style="margin-left: 660px; margin-bottom: 0px;">
+                    TimeSquare&nbsp;Pvt<sup>&#169;</sup>
+                </p>
+            </div>
+        </footer>
+<script src="TimeZone.js"></script>
+</body>
+
+
+</html>
